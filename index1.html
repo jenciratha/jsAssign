@@ -11,8 +11,9 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
-<body onload="myFunction()" style="margin: 0;">
-  
+<body style="margin: 0;">
+  <!-- <body onload="myFunction()" style="margin: 0;"> -->
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Travel Food</a>
@@ -26,13 +27,13 @@
           <a class="nav-link active text-warning" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./secondpage.html">About Us</a>
+          <a class="nav-link" href="map.html">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="openPopup()">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfollo</a>
+          <a class="nav-link" href="secondpage.html">Portfollo</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Team</a>
@@ -49,9 +50,9 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Contact</a>
+          <a class="nav-link disabled" href="map.html">Contact</a>
         </li>
-        <li><button type="button"  class="btn btn-primary" onmouseover="bigImg(this)"onmouseout="normalImg(this)">Get Started</button></li>
+        <li><button type="button"  id="root" class="btn" onmouseover="bigImg(this)" onmouseout="normalImg(this)">Get Started</button></li>
       </ul>
   </nav>
   <!--Home-->
@@ -274,7 +275,7 @@
   <script src="https://kit.fontawesome.com/91c56e70aa.js" crossorigin="anonymous"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="/home/ukijaffna/Documents/resubmission/bootstrap/bootstrap/index.js"></script>
+  <script src="bootstrap/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <script>

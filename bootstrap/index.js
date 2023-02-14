@@ -22,12 +22,22 @@ function bigImg(x) {
     x.style.width = "32px";
   }
 
-$(document).ready(function(){
-    $('.nav-link').click(function(){
-      $('.nav-link').removeClass('active');
-      $(this).addClass('active');
-    });
-  });
+  var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementById("root");
+        for (var i = 0; i < root.length; i++) {
+          root[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        } 
+
+// $(document).ready(function(){
+//     $('.nav-link').click(function(){
+//       $('.nav-link').removeClass('active');
+//       $(this).addClass('active');
+//     });
+//   });
 
 //   var slidePosition = 0;
 //   SlideShow();
@@ -85,4 +95,10 @@ $(document).ready(function(){
 
         function openPopup(){
             newwin = window.open('page.html');
+        }
+        function open(){
+            newwin = window.open('map.html');
+        }
+        function opens(){
+            newwin = window.open('secondpage.html');
         }
